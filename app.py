@@ -25,9 +25,9 @@ def predict():
     prediction = model.predict(input_data_df)
 
     if prediction[0] == 1.0:
-        cancer_type = 'Malignant'
+        cancer_type = 'Malignant Cancer'
     else:
-        cancer_type = 'Benign'
+        cancer_type = 'Benign Cancer'
         
     return jsonify({'output':{'cancer_type':cancer_type}})
         
